@@ -1,0 +1,61 @@
+{
+  "name": "bf-syntax",
+  "displayName": "Brainf*** Syntax Highlighter",
+  "description": "Adds syntax highlighting for .bf, .bfi, .bmacro files",
+  "version": "1.0.0",
+  "publisher": "zsakowitz",
+  "icon": "images/icon.png",
+  "repository": {
+    "url": "https://github.com/zsakowitz/bf-syntax"
+  },
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:brainfuck",
+    "onLanguage:brainfuckimproved"
+  ],
+  "main": "index.js",
+  "contributes": {
+    "languages": [
+      {
+        "id": "brainfuck",
+        "aliases": [
+          "Brainfuck"
+        ],
+        "extensions": [
+          ".b",
+          ".bf"
+        ],
+        "configuration": "./brainfuck/config.json"
+      },
+      {
+        "id": "brainfuckimproved",
+        "aliases": [
+          "Brainfuck + C Preprocessor"
+        ],
+        "extensions": [
+          ".bfi",
+          ".bfh",
+          ".bmacro"
+        ],
+        "configuration": "./brainfuckimproved/config.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "brainfuck",
+        "scopeName": "source.brainfuck",
+        "path": "./brainfuck/lang.json"
+      },
+      {
+        "language": "brainfuckimproved",
+        "scopeName": "source.brainfuckimproved",
+        "path": "./brainfuckimproved/lang.json"
+      }
+    ]
+  }
+}
