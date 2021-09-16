@@ -1,0 +1,29 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmLanguage.schema.json",
+  "scopeName": "text.brainfuck",
+  "name": "Brainfuck",
+  "comment": "Syntax highlighting support for Brainfuck.",
+  "fileTypes": ["b", "bf"],
+  "patterns": [
+    {
+      "match": "\\[|\\]",
+      "name": "keyword.control.brainfuck"
+    },
+    {
+      "match": "<|>",
+      "name": "storage.type.brainfuck"
+    },
+    {
+      "match": "\\+|-",
+      "name": "keyword.operator.arithmetic.brainfuck"
+    },
+    {
+      "match": "\\.|,",
+      "name": "entity.name.function.io.brainfuck"
+    },
+    {
+      "match": "[^+<>\\-\\[\\].,]+",
+      "name": "comment.brainfuck"
+    }
+  ]
+}
