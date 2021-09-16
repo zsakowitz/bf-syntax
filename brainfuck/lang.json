@@ -1,6 +1,6 @@
 {
   "$schema": "https://raw.githubusercontent.com/Septh/tmlanguage/master/tmLanguage.schema.json",
-  "scopeName": "text.brainfuck",
+  "scopeName": "source.brainfuck",
   "name": "Brainfuck",
   "comment": "Syntax highlighting support for Brainfuck.",
   "fileTypes": ["b", "bf"],
