@@ -6,7 +6,11 @@
     "increaseIndentPattern": "[",
     "decreaseIndentPattern": "]"
   },
-  "colorizedBracketPairs": [["[", "]"]],
+  "colorizedBracketPairs": [
+    ["(", ")"],
+    ["[", "]"],
+    ["{", "}"]
+  ],
   "folding": {
     "markers": {
       "start": "^\\s*#region\\b",
